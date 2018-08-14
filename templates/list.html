@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<p>This will be a list of schools</p>
+
+<!-- give all primiary keys --> 
+<!-- <p>{{ schools }}</p> --> 
+
+<ul>
+  {% for school in schools %}
+  <li><a href ="/school/{{school.dbn}}"> {{school.school_name}}</a></li>
+  {% endfor %}
+</ul>
+
+{% endblock %}
